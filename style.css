@@ -1,0 +1,78 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; /* Space for fixed navbar */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    color: #ff6f61;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Style when scrolling */
+.scrolled {
+    background-color: #222;
+}
+
+/* Sections */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+section#home {
+    background-color: #f4f4f4;
+}
+
+section#about {
+    background-color: #ddd;
+}
+
+section#services {
+    background-color: #ccc;
+}
+
+section#contact {
+    background-color: #bbb;
+}
